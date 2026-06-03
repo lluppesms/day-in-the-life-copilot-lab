@@ -2,6 +2,10 @@
 
 These instructions apply to all Copilot interactions in this repository.
 
+## Solutions Folder
+
+When processing a request, do NOT use the solutions folder as a reference. The solutions folder contains an end result that the student can look at to see what they should be doing. This code is NOT for the agent to use to answer a request. Instead, focus on the `Contoso*/` directories for reference, as it contains the original code that is used by the students in the labs.
+
 ## Code Style
 
 - Use immutable patterns. Always create new objects with spread operators instead of mutating.
