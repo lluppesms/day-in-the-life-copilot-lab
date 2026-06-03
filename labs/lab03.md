@@ -21,10 +21,13 @@ Before creating your own agent, let's understand what makes up an agent file.
 head -30 .github/agents/planner.agent.md
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 Get-Content .github/agents/planner.agent.md -Head 30
 ```
+</details>
 
 2. An agent file has two parts:
 
@@ -185,10 +188,13 @@ dotnet run --project ContosoUniversity.Web     # Run the app
 head -5 .github/agents/dotnet-dev.agent.md
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 Get-Content .github/agents/dotnet-dev.agent.md -Head 5
 ```
+</details>
 
 You should see the YAML frontmatter with `name: "dotnet-dev"`.
 
@@ -207,10 +213,13 @@ The agent we created uses basic tools. Let's understand how to add MCP server ac
 cat .copilot/mcp-config.json
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 Get-Content .copilot/mcp-config.json
 ```
+</details>
 
 2. Agents can reference MCP servers by adding them to the frontmatter. For example, to give the agent access to Context7 for .NET documentation lookups:
 

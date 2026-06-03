@@ -95,10 +95,13 @@ applyTo: '**/*.cshtml'
 head -4 .github/instructions/razor-views.instructions.md
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 Get-Content .github/instructions/razor-views.instructions.md -Head 4
 ```
+</details>
 
 This instruction only loads when Razor files (`.cshtml`) are in context — not for C# files, not for tests, only views.
 
