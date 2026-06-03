@@ -21,10 +21,13 @@ Skills are knowledge packs that Copilot loads **automatically** when the convers
 head -5 .github/skills/coding-standards/SKILL.md
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 Get-Content .github/skills/coding-standards/SKILL.md -Head 5
 ```
+</details>
 
 The `description` field is critical. A clear, specific description means better auto-activation.
 
@@ -43,10 +46,13 @@ Let's create a `.NET testing` skill with patterns specific to ContosoUniversity.
 mkdir -p .github/skills/dotnet-testing
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 New-Item -ItemType Directory -Path .github/skills/dotnet-testing -Force | Out-Null
 ```
+</details>
 
 2. Create the SKILL.md:
 
@@ -255,10 +261,13 @@ public class StudentIntegrationTests : IClassFixture<CustomWebApplicationFactory
 head -5 .github/skills/dotnet-testing/SKILL.md
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 Get-Content .github/skills/dotnet-testing/SKILL.md -Head 5
 ```
+</details>
 
 ## 4.3 Create a Prompt Template
 
@@ -273,10 +282,13 @@ Prompts are reusable templates invoked with `/prompt-name`. Let's create one tha
 head -15 .github/prompts/create-test.prompt.md
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 Get-Content .github/prompts/create-test.prompt.md -Head 15
 ```
+</details>
 
 2. Create the .NET-specific test prompt:
 
@@ -373,10 +385,13 @@ Use `MethodName_Condition_ExpectedResult`:
 head -7 .github/prompts/create-dotnet-test.prompt.md
 ```
 
-**PowerShell:**
+<details>
+<summary>PowerShell</summary>
+
 ```powershell
 Get-Content .github/prompts/create-dotnet-test.prompt.md -Head 7
 ```
+</details>
 
 ## 4.4 Test Skill Auto-Activation
 
