@@ -103,7 +103,7 @@ Add a \`MaxEnrollment\` property to the \`Course\` model to support enrollment c
 
 ## Requirements
 
-- Add a \`MaxEnrollment\` property (int) to \`ContosoUniversity.Core/Models/Course.cs\`
+- Add a \`MaxEnrollment\` property (int) to \`src/ContosoUniversity.Core/Models/Course.cs\`
 - Default value should be 30
 - Add XML documentation for the new property
 - Add a unit test verifying the default value
@@ -207,7 +207,7 @@ Alternatively, you can apply suggestions directly:
 ```bash
 gh pr checkout <PR_NUMBER>
 # Make your changes
-git add ContosoUniversity.Core/Models/Course.cs
+git add src/ContosoUniversity.Core/Models/Course.cs
 git commit -m "fix: address review feedback for MaxEnrollment"
 git push
 ```

@@ -20,7 +20,7 @@ Invoke this skill:
 ### Phase 1: Build Verification
 ```bash
 # Check if the solution builds
-dotnet build ContosoUniversity.sln 2>&1 | tail -20
+dotnet build src/ContosoUniversity.sln 2>&1 | tail -20
 ```
 
 If build fails, STOP and fix before continuing.
@@ -28,7 +28,7 @@ If build fails, STOP and fix before continuing.
 ### Phase 2: Code Analysis
 ```bash
 # Run .NET analyzers (built into the build process)
-dotnet build ContosoUniversity.sln -warnaserror 2>&1 | head -30
+dotnet build src/ContosoUniversity.sln -warnaserror 2>&1 | head -30
 ```
 
 Report all warnings and errors. Fix critical ones before continuing.
@@ -36,7 +36,7 @@ Report all warnings and errors. Fix critical ones before continuing.
 ### Phase 3: Test Suite
 ```bash
 # Run tests with coverage
-dotnet test ContosoUniversity.sln --collect:"XPlat Code Coverage" 2>&1 | tail -50
+dotnet test src/ContosoUniversity.sln --collect:"XPlat Code Coverage" 2>&1 | tail -50
 
 # Check coverage threshold
 # Target: 80% minimum
@@ -58,7 +58,7 @@ grep -rn "api[_-]key" --include="*.cs" --include="*.json" . 2>/dev/null | head -
 dotnet list package --vulnerable 2>&1 | head -20
 
 # Check for Console.WriteLine in production code (not tests)
-grep -rn "Console.WriteLine" --include="*.cs" ContosoUniversity.Web/ ContosoUniversity.Core/ ContosoUniversity.Infrastructure/ 2>/dev/null | head -10
+grep -rn "Console.WriteLine" --include="*.cs" src/ContosoUniversity.Web/ src/ContosoUniversity.Core/ src/ContosoUniversity.Infrastructure/ 2>/dev/null | head -10
 ```
 
 ### Phase 5: Diff Review

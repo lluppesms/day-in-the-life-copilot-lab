@@ -54,7 +54,7 @@ Enable courses to declare one or more prerequisite courses that students must co
 ### New Domain Model
 
 ```csharp
-// ContosoUniversity.Core/Models/CoursePrerequisite.cs
+// src/ContosoUniversity.Core/Models/CoursePrerequisite.cs
 public class CoursePrerequisite
 {
     public int CourseID { get; init; }           // the course that has the prerequisite
@@ -99,7 +99,7 @@ public virtual ICollection<CoursePrerequisite> DependentCourses { get; set; } = 
 - `ValidatePrerequisites_WhenAllPrereqsPassed_ReturnsSuccess`
 - `ValidatePrerequisites_WhenCourseHasNoPrereqs_ReturnsSuccess`
 
-### Integration Tests (`ContosoUniversity.Tests/Integration`)
+### Integration Tests (`src/ContosoUniversity.Tests/Integration`)
 
 - `CoursesController_Edit_POST_WithPrerequisites_PersistsRelationships` (via `WebApplicationFactory`)
 - `CoursesController_Edit_POST_CircularDependency_ReturnsValidationError`
@@ -123,6 +123,6 @@ public virtual ICollection<CoursePrerequisite> DependentCourses { get; set; } = 
 
 ## 7. Dependencies
 
-- Existing `Enrollment` model must expose `Grade` (already present in `ContosoUniversity.Core/Models/Enrollment.cs`).
+- Existing `Enrollment` model must expose `Grade` (already present in `src/ContosoUniversity.Core/Models/Enrollment.cs`).
 - EF Core migrations tooling (`dotnet-ef`) must be available in the dev environment.
 - No new NuGet packages required; feature uses existing EF Core and ASP.NET Core MVC patterns already in the solution.

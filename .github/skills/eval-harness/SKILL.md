@@ -47,13 +47,13 @@ Result: X/Y passed (previously Y/Y)
 Deterministic checks using code:
 ```bash
 # Check if file contains expected pattern
-grep -q "public class StudentService" ContosoUniversity.Core/Services/StudentService.cs && echo "PASS" || echo "FAIL"
+grep -q "public class StudentService" src/ContosoUniversity.Core/Services/StudentService.cs && echo "PASS" || echo "FAIL"
 
 # Check if tests pass
 dotnet test --filter "FullyQualifiedName~Auth" && echo "PASS" || echo "FAIL"
 
 # Check if build succeeds
-dotnet build ContosoUniversity.sln && echo "PASS" || echo "FAIL"
+dotnet build src/ContosoUniversity.sln && echo "PASS" || echo "FAIL"
 ```
 
 ### 2. Model-Based Grader

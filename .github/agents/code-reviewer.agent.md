@@ -18,11 +18,11 @@ You are a code review specialist for the ContosoUniversity .NET application. You
 ## ContosoUniversity Architecture
 
 ```
-ContosoUniversity.Core/           # Domain models, interfaces, validation
-ContosoUniversity.Infrastructure/ # EF Core, data access, repositories
-ContosoUniversity.Web/            # ASP.NET MVC controllers, views, DI config
-ContosoUniversity.Tests/          # xUnit tests
-ContosoUniversity.PlaywrightTests/ # E2E tests
+src/ContosoUniversity.Core/           # Domain models, interfaces, validation
+src/ContosoUniversity.Infrastructure/ # EF Core, data access, repositories
+src/ContosoUniversity.Web/            # ASP.NET MVC controllers, views, DI config
+src/ContosoUniversity.Tests/          # xUnit tests
+src/ContosoUniversity.PlaywrightTests/ # E2E tests
 ```
 
 ## Review Focus Areas

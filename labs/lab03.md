@@ -76,7 +76,7 @@ You are a .NET development specialist working on the ContosoUniversity applicati
 
 ## When Invoked
 
-1. Check the solution builds: `dotnet build ContosoUniversity.sln`
+1. Check the solution builds: `dotnet build src/ContosoUniversity.sln`
 2. Review the relevant project layer before making changes
 3. Follow the architecture: Core → Infrastructure → Web
 4. Implement with proper dependency injection and async patterns
@@ -84,11 +84,11 @@ You are a .NET development specialist working on the ContosoUniversity applicati
 ## ContosoUniversity Architecture
 
 ```
-ContosoUniversity.Core/           # Domain models, interfaces, validation
-ContosoUniversity.Infrastructure/ # EF Core, data access, repositories
-ContosoUniversity.Web/            # ASP.NET MVC controllers, views, DI config
-ContosoUniversity.Tests/          # xUnit tests
-ContosoUniversity.PlaywrightTests/ # E2E tests
+src/ContosoUniversity.Core/           # Domain models, interfaces, validation
+src/ContosoUniversity.Infrastructure/ # EF Core, data access, repositories
+src/ContosoUniversity.Web/            # ASP.NET MVC controllers, views, DI config
+src/ContosoUniversity.Tests/          # xUnit tests
+src/ContosoUniversity.PlaywrightTests/ # E2E tests
 ```
 
 ## Coding Standards
@@ -103,9 +103,9 @@ ContosoUniversity.PlaywrightTests/ # E2E tests
 ## Development Commands
 
 ```bash
-dotnet build ContosoUniversity.sln            # Build all projects
-dotnet test ContosoUniversity.Tests/           # Run tests
-dotnet run --project ContosoUniversity.Web     # Run the app
+dotnet build src/ContosoUniversity.sln            # Build all projects
+dotnet test src/ContosoUniversity.Tests/           # Run tests
+dotnet run --project src/ContosoUniversity.Web     # Run the app
 ```
 
 ## Review Checklist
@@ -136,7 +136,7 @@ You are a .NET development specialist working on the ContosoUniversity applicati
 
 ## When Invoked
 
-1. Check the solution builds: `dotnet build ContosoUniversity.sln`
+1. Check the solution builds: `dotnet build src/ContosoUniversity.sln`
 2. Review the relevant project layer before making changes
 3. Follow the architecture: Core → Infrastructure → Web
 4. Implement with proper dependency injection and async patterns
@@ -144,11 +144,11 @@ You are a .NET development specialist working on the ContosoUniversity applicati
 ## ContosoUniversity Architecture
 
 ```
-ContosoUniversity.Core/           # Domain models, interfaces, validation
-ContosoUniversity.Infrastructure/ # EF Core, data access, repositories
-ContosoUniversity.Web/            # ASP.NET MVC controllers, views, DI config
-ContosoUniversity.Tests/          # xUnit tests
-ContosoUniversity.PlaywrightTests/ # E2E tests
+src/ContosoUniversity.Core/           # Domain models, interfaces, validation
+src/ContosoUniversity.Infrastructure/ # EF Core, data access, repositories
+src/ContosoUniversity.Web/            # ASP.NET MVC controllers, views, DI config
+src/ContosoUniversity.Tests/          # xUnit tests
+src/ContosoUniversity.PlaywrightTests/ # E2E tests
 ```
 
 ## Coding Standards
@@ -163,9 +163,9 @@ ContosoUniversity.PlaywrightTests/ # E2E tests
 ## Development Commands
 
 ```bash
-dotnet build ContosoUniversity.sln            # Build all projects
-dotnet test ContosoUniversity.Tests/           # Run tests
-dotnet run --project ContosoUniversity.Web     # Run the app
+dotnet build src/ContosoUniversity.sln            # Build all projects
+dotnet test src/ContosoUniversity.Tests/           # Run tests
+dotnet run --project src/ContosoUniversity.Web     # Run the app
 ```
 
 ## Review Checklist
@@ -253,7 +253,7 @@ copilot
 ```
 
 3. The agent should:
-   - Read files from `ContosoUniversity.Core/Models/`
+   - Read files from `src/ContosoUniversity.Core/Models/`
    - Identify: Student, Course, Instructor, Enrollment, Department, OfficeAssignment
    - Describe relationships (Student has Enrollments, Course has Enrollments, etc.)
 

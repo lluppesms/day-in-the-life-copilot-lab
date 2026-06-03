@@ -122,7 +122,7 @@ Only fall back to static links when MCP tools return no results or are unavailab
 This repository contains a brownfield .NET web application (ContosoUniversity) used as the lab project.
 
 - **Architecture**: Clean architecture with Core (domain), Infrastructure (data/services), Web (ASP.NET MVC), Tests (xUnit), PlaywrightTests (E2E).
-- **Solution**: `ContosoUniversity.sln` at the repo root.
+- **Solution**: `src/ContosoUniversity.sln` under the `src/` directory.
 - **Patterns**: Repository pattern, dependency injection, Entity Framework Core.
 - **Testing**: xUnit for unit/integration tests, Playwright for E2E.
 - When performing code review, ignore files in the `reports/` directory.

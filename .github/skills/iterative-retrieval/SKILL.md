@@ -45,7 +45,7 @@ Initial broad query to gather candidate files:
 
 ```
 Start with high-level intent:
-  patterns: ['**/*.cs', 'ContosoUniversity.Core/**/*.cs']
+  patterns: ['**/*.cs', 'src/ContosoUniversity.Core/**/*.cs']
   keywords: ['Student', 'Enrollment', 'Repository']
   excludes: ['*Tests*.cs', 'Migrations/*.cs']
 
