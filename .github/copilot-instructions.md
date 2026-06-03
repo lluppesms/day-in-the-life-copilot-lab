@@ -2,9 +2,28 @@
 
 These instructions apply to all Copilot interactions in this repository.
 
-## Solutions Folder
+## Ignore the Solutions Folder Policy — AGENTS MUST FOLLOW THIS
 
 When processing a request, do NOT use the solutions folder as a reference. The solutions folder contains an end result that the student can look at to see what they should be doing. This code is NOT for the agent to use to answer a request. Instead, focus on the `Contoso*/` directories for reference, as it contains the original code that is used by the students in the labs.
+
+## ⚠️ Git Branch Policy — AGENTS MUST FOLLOW THIS
+
+Do not commit or push changes unless directly instructed by the user.  If instructed to commit, then follow these guidelines.
+
+**NEVER commit directly to `main` or `master`.** This is a strict rule for all agents and automated tools.
+
+Before making any commits or file changes:
+1. **Check the current branch**: `git branch --show-current`
+2. **If on `main` or `master`, create and switch to a feature branch first**:
+   ```
+   git checkout -b feature/short-description-of-task
+   ```
+3. **All work must be committed to the feature branch**, not to `main`/`master`.
+4. When finished, open a Pull Request targeting `main` — do not merge directly.
+
+Branch naming convention: `feature/short-description`, `fix/short-description`, or `chore/short-description`.
+
+The human owner will review and merge PRs into `main`. Agents do not have permission to merge.
 
 ## Code Style
 

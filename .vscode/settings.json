@@ -1,8 +1,8 @@
 {
-  "files.exclude": {
+  "search.exclude": {
     "**/solutions/**": true
   },
-  "search.exclude": {
+  "files.watcherExclude": {
     "**/solutions/**": true
   }
 }
